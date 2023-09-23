@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+
+    <title>Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="font-Alata font-medium text-[15px]">
+    <header class="absolute top-0 left-0 w-full text-white z-20">
+      <div
+        class="container px-2 md:px-4 lg:px-16 flex justify-between items-center relative mx-auto py-4 md:py-6"
+      >
+        <div class="">
+          <img
+            src="./images/logo.svg"
+            alt="Loopstudios logo"
+            class="cursor-pointer"
+          />
+        </div>
+        <div id="hambergur-button" class="md:hidden cursor-pointer">
+          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        </div>
+        <nav class="hidden md:block">
+          <ul class="flex gap-4 lg:gap-6">
+            <li class="group">
+              <a href="#">About</a>
+              <span
+                class="w-0 group-hover:w-full h-[1px] bg-white block transition-[width]"
+              ></span>
+            </li>
+            <li class="group">
+              <a href="#">Careers</a>
+              <span
+                class="w-0 group-hover:w-full h-[1px] bg-white block transition-[width]"
+              ></span>
+            </li>
+            <li class="group">
+              <a href="#">Events</a>
+              <span
+                class="w-0 group-hover:w-full h-[1px] bg-white block transition-[width]"
+              ></span>
+            </li>
+            <li class="group">
+              <a href="#">Products</a>
+              <span
+                class="w-0 group-hover:w-full h-[1px] bg-white block transition-[width]"
+              ></span>
+            </li>
+            <li class="group">
+              <a href="#">Support</a>
+              <span
+                class="w-0 group-hover:w-full h-[1px] bg-white block transition-[width]"
+              ></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" data-status="close" class="fixed inset-0 w-full h-full bg-black transition-transform ease-elastic duration-300 data-[status=open]:translate-x-0 -translate-x-[100%]">
+        <div class="container px-2 py-4 md:px-4 lg:px-16 mx-auto">
+          <div class="flex justify-between mb-36">
+            <img src="./images/logo.svg" alt="logo">
+            <button id="close-button"><img src="./images/icon-close.svg" alt="close icon"></button>
+          </div>
+          <nav class=" text-white font-Josefin-sans text-4xl">
+            <ul class="flex flex-col gap-4 ">
+              <li class="group">
+                <a href="#">About</a>
+               
+              </li>
+              <li class="group">
+                <a href="#">Careers</a>
+                
+              </li>
+              <li class="group">
+                <a href="#">Events</a>
+               
+              </li>
+              <li class="group">
+                <a href="#">Products</a>
+               
+              </li>
+              <li class="group">
+                <a href="#">Support</a>
+               
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="min-h-screen relative lg:mb-[120px] mb-[100px]">
+      
+      <img
+        src="./images/desktop/image-hero.jpg"
+        alt="hero image"
+        class="w-full h-full absolute inset-0 object-cover object-center"
+      />
+      <div class="absolute left-0 top-0 w-full h-full bg-black opacity-10"></div>
+      <div class="container px-2 md:px-4 lg:px-16 relative mx-auto">
+        <div class="relative pt-[250px] max-w-fit">
+          <h2
+            class="border-2 border-white p-6 sm:p-8 md:p-10 pr-14 text-4xl  md:text-6xl text-white font-Josefin-sans md:tracking-[1.4px] uppercase"
+          >
+            <span class="block md:mb-1">Immersive</span>
+            <span class="block md:mb-1">experiences</span>
+            <span class="block">that deliver</span>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section class="lg:mb-[120px] mb-[100px]">
+      <div
+        class="container mx-auto px-2 md:px-4 lg:px-16 grid-cols-1 lg:items-end lg:grid md:grid-cols-5 lg:grid-rows-3 "
+      >
+        <div class="md:col-start-1 md:col-end-4 md:row-start-1 md:row-end-4">
+          <img
+            srcset="./images/desktop/image-interactive.jpg 1024w"
+            src="./images/desktop/image-interactive.jpg"
+            alt="image that shows the experiece"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div
+          class="bg-white px-10 sm:px-12 md:px-14 pt-10 sm:pt-12 md:pt-14 pb-0 col-start-3 col-end-6 row-start-2 row-end-4 lg:max-w-xl text-center lg:text-start"
+        >
+          <h3
+            class=" text-4xl md:text-5xl text-black font-Josefin-sans md:tracking-[1.4px] uppercase mb-4"
+          >
+            <span class="block">The leader in</span>
+            <span class="block">interactive VR</span>
+          </h3>
+          <p class="w-full text-very-dark-gray leading-6 ">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lg:mb-[120px] mb-[100px]"">
+      <div class="container px-2 md:px-4 lg:px-16 relative mx-auto ">
+        <div class="md:flex justify-between items-center mb-[50px]">
+          <h3 class="uppercase text-4xl font-Josefin-sans text-center md:text-start">Our creations</h3>
+          <button class="hidden md:block uppercase font-Josefin-sans text-2xl px-8 py-2 tracking-widest border-2 border-black">See all</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4 md:gap-6 lg:gap-8 ">
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-curiosity.jpg">
+              <img src="./images/desktop/image-curiosity.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">The </span>
+              <span class="block">curiosity</span>
+            </h3>
+          </div>
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-deep-earth.jpg">
+              <img src="./images/desktop/image-deep-earth.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">Deep</span>
+              <span class="block">earth</span>
+            </h3>
+          </div>
+          
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-fisheye.jpg">
+              <img src="./images/desktop/image-fisheye.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">Make it </span>
+              <span class="block">fisheye</span>
+            </h3>
+          </div>
+        
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-from-above.jpg">
+              <img src="./images/desktop/image-from-above.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">From up </span>
+              <span class="block">above VR</span>
+            </h3>
+          </div>
+          
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-grid.jpg">
+              <img src="./images/desktop/image-grid.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">The </span>
+              <span class="block">grid</span>
+            </h3>
+          </div>
+         
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-night-arcade.jpg">
+              <img src="./images/desktop/image-night-arcade.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">Night </span>
+              <span class="block">arcade</span>
+            </h3>
+          </div>
+          
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-pocket-borealis.jpg">
+              <img src="./images/desktop/image-pocket-borealis.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">Pocket </span>
+              <span class="block">borealis</span>
+            </h3>
+          </div>
+         
+          <div class="relative">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-soccer-team.jpg">
+              <img src="images/desktop/image-soccer-team.jpg" alt="grid image">
+            </picture>
+            <div class="absolute left-0 top-0 w-full h-full bg-black opacity-20"> <!-- mask -->
+            </div>
+            <h3 class="absolute left-6 bottom-6 text-4xl font-Josefin-sans text-white uppercase opacity-95">
+              <span class="block">Soccer</span>
+              <span class="block">team VR</span>
+            </h3>
+          </div>     
+        </div>
+        <button class="md:hidden block uppercase font-Josefin-sans text-2xl px-8 py-2 tracking-widest border-2 border-black mx-auto mt-6 ">See all</button>
+      </div>
+    </section>
+    <footer class="bg-black text-white py-8" >
+      <div class="container px-2 md:px-4 lg:px-16 relative mx-auto flex flex-col md:flex-row md:justify-between items-center text-center gap-8 md:gap-0">
+        <div class="text-center">
+          <img src="./images/logo.svg" alt="logo" class="mb-4 max-h-40">
+          <ul class="flex flex-col md:flex-row gap-4 cursor-pointer">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <ul class="flex justify-center md:justify-start gap-4 mb-4">
+           <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
+           <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
+           <li><a href="#"><img src="./images/icon-pinterest.svg" alt=""></a></li>
+           <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
+          </ul>
+          <p class="text-dark-gray">
+            © 2023 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
